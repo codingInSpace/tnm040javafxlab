@@ -1,4 +1,21 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/*only here*/
 .borderpane-body {
 	 -fx-background-color: linear-gradient(to right, #F0FFFF , #B2FFFF);
+}
+
+.top-bar {
+    /*-fx-text-fill: white;  ?*/
+    -fx-background-color: grey;
+}
+
+.cool-button {
+	-fx-background-color:  #99C2D6;
+	-fx-text-fill: blue;
+}
+
+.cool-button:hover {
+    -fx-background-color: #E0EDF3;
+    -fx-cursor: pointer;
 }
