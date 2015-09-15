@@ -1,1 +1,4 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.borderpane-body {
+	 -fx-background-color: linear-gradient(to right, #F0FFFF , #B2FFFF);
+}

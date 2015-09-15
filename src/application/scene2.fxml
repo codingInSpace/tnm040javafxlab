@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Scene2Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="borderpane-body" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Scene2Controller">
    <top>
       <VBox prefHeight="18.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
-            <MenuBar>
+            <MenuBar style="-fx-background-color: grey;">
               <menus>
                 <Menu mnemonicParsing="false" text="File">
                   <items>
@@ -35,20 +36,35 @@
    <center>
       <VBox maxWidth="600.0" prefHeight="375.0" BorderPane.alignment="TOP_LEFT">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Communicationzz and UI yo" />
+            <Text fill="#0000d0" strokeType="OUTSIDE" strokeWidth="0.0" text="Communicationzz and UI yo" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma" size="29.0" />
+               </font></Text>
             <TextFlow prefHeight="200.0" prefWidth="200.0">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bacon ipsum dolor amet corned beef kielbasa ham hock, cow meatloaf pork beef ribs pig shankle tri-tip pastrami capicola beef. Pig tri-tip sirloin meatloaf sausage, corned beef shankle. Fatback brisket ground round swine tail. Pork chop ball tip bacon, beef porchetta alcatra chuck andouille cow bresaola pork pork belly beef ribs flank. Brisket porchetta doner, t-bone turducken beef ribs short loin beef pork chop tenderloin picanha sausage short ribs ground round bresaola. Sirloin ribeye ham hock shank. &amp;#10; Turkey pork ribeye shoulder. Tail boudin short ribs, bacon tenderloin spare ribs bresaola pastrami. Chicken turducken alcatra chuck. Turkey shankle cupim flank alcatra. Andouille doner rump, jowl spare ribs t-bone salami kielbasa meatloaf tongue chicken short ribs drumstick. Kevin pork belly tail venison, flank andouille ham hock kielbasa meatloaf spare ribs capicola ribeye picanha. Pork chop pork belly t-bone ground round brisket." wrappingWidth="659.84375" />
                </children>
             </TextFlow>
-            <Button fx:id="content_button" mnemonicParsing="false" onAction="#niceMessage" text="Press me!" />
+            <Button fx:id="content_button" mnemonicParsing="false" onAction="#niceMessage" style="-fx-background-color: #99C2D6;" text="Press me!" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding></Button>
          </children>
       </VBox>
    </center>
    <bottom>
       <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="BOTTOM_LEFT">
          <children>
-            <Text fx:id="footer_message" strokeType="OUTSIDE" strokeWidth="0.0" text="Message" textOrigin="BOTTOM" wrappingWidth="72.681640625" />
+            <Text fx:id="footer_message" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Message" textOrigin="BOTTOM" wrappingWidth="796.681640625">
+               <font>
+                  <Font size="22.0" />
+               </font></Text>
          </children>
       </VBox>
    </bottom>
