@@ -13,12 +13,13 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
+//			Basic scene
 //			BorderPane root = new BorderPane();
 //			Text textNode = new Text("hej värld");
 //			root.setCenter(textNode);
 //			Scene scene = new Scene(root,800,600);
 
-			Parent root = FXMLLoader.load(getClass().getResource("scene1.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("scene2.fxml"));
 
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
